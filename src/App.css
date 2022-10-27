@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+*{
+    font-family: 'Caveat', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    background:
+    radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
+    radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+    background-color: #1976d1;
+    background-size:75px 100px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-task{
+    background-color: #d59134;
+    width: 750px;
+    height: 900px;
+    margin: 150px 0 70px 0px;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 30px 30px 10px 0 #1565bf;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.img-task{
+    position: absolute;
 }
 
-.App-link {
-  color: #61dafb;
+.form-task{
+    background-color: #fff;
+    box-shadow: 3px 3px 2px 0 #d7d7d7;
+    background-image:
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 2.1em;
+    height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h1-task{
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 4px;
+    padding: 40px 0 20px 0;
+    font-size: 40px;
+}
+
+.input-task{
+    width: 80%;
+    text-align: center;
+    height: 45px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0 10px 0 10px;
+    font-size: 30px;
+    outline: none;
+    margin: 40px 0 28px 0;
+    border: none;
+    background-color: #adadad43;
+}
+
+.input-task:hover{
+    background-color: #adadad71;
+}
+
+.input-task:focus{
+    background-color: #adadad71;
+}
+
+.button-task-input{
+    height: 45px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #32a33f;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.button-task-input:hover{
+    background-color: #21c034;
+}
+
+.div-list-task{
+    margin: 0 0 0 8%;  
+    display: flex;
+    word-break:break-all;
+}
+
+.script-task{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.h2-task{
+    font-size: 35px;
+    line-height: 33.55px;
+    width: 90%;
+    text-align: left;
+}
+
+.h2-task::first-letter {
+    text-transform: uppercase;
+}
+
+.finish{
+    text-decoration: line-through;
+}
+.button-task{
+    border: none;
+    background-color: #adadad43;
+    border: 3px solid #32a33f ;
+    color: #32a33f;
+    font-size: 17px;
+    font-weight: 900;
+    width: 32px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2px 2px 0 15px;
+}
+
+.button-task:hover{
+    background-color: #adadad71;
+}
+.button-delete-task{
+    border: none;
+    color: #dc2424;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 2px 8% 0 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .container-task{
+        margin: 150px 10px 70px 10px;
+        padding: 20px;
+        box-shadow: 6px 6px 2px 0 #1565bf;
+    }
+    .h1-task{
+        font-size: 35px;
+    }
+    .input-task{
+        width: 70%;
+        height: 40px;
+        font-size: 27px;
+        margin: 51px 0 30px 0;
+    }
+
+    .button-task-input{
+        height: 40px;
+        font-size: 27px;
+        width: 65px;
+    }
+    .h2-task{
+        font-size: 27px;
+        width: 80%;
+    }
+    .button-task{
+        font-size: 15px;
+        width: 28px;
+        height: 28px;
+        margin: 3px 2px 0 10px;
+    }
+    .button-delete-task{
+        margin: 2px 6.1% 0 5px;
+    }
 }
